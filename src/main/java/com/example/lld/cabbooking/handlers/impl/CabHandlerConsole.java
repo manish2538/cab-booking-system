@@ -56,14 +56,14 @@ private HashMap<String,Runnable> functionToExecute = new HashMap<String,Runnable
 
     @Override
     public void updateCabAvailability()  {
-        String cabId;
+        String cabId = takeinput.nextLine();
         Integer availabiltiy = Integer.valueOf(takeinput.next());
         HashSet<Integer> availabiltyStatus = new HashSet<>(Arrays.asList(0,1));
         if(availabiltyStatus.contains(availabiltiy)){
             cabManager.updateCabAvailability(cabId , availabiltiy);
         }
         else{
-            throw new RuntimeException("Not a valid availabilty State")
+            throw new RuntimeException("Not a valid availabilty State");
         }
 
     }
@@ -71,7 +71,9 @@ private HashMap<String,Runnable> functionToExecute = new HashMap<String,Runnable
     @Override
     public List<Cab> getCabs() {
 
-        
-        return null;
+        int X = Integer.valueOf(takeinput.next());
+        int Y = Integer.valueOf(takeinput.next());
+
+        return cabManager.getCabs(new Location(X,y));
     }
 }
