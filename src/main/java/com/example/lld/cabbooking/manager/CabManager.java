@@ -1,6 +1,7 @@
 package com.example.lld.cabbooking.manager;
 
 
+import com.example.lld.cabbooking.dao.CabDao;
 import com.example.lld.cabbooking.modal.Cab;
 import com.example.lld.cabbooking.modal.Location;
 import lombok.AllArgsConstructor;
