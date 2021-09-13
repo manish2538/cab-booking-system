@@ -62,20 +62,27 @@ public class RiderHandlerConsole implements RiderHandler {
         String bookedCabRideId = rideManager.bookCab(riderEmailId,sourceX,sourceY,destX,destY);
         return  bookedCabRideId;
 
+
+
+
     }
 
     @Override
     public void rideCab() {
+        String rideId = takeInput.nextLine();
+        rideManager.ridecab(rideId);
 
     }
 
     @Override
     public List<Ride> fetchRideHistory() {
-        return null;
+        String riderId = takeInput.nextLine();
+        rideManager.getRidesForRider(riderId);
     }
 
     @Override
     public void endTrip() {
-
+        String rideId = takeInput.nextLine();
+        rideManager.endTrip(rideId);
     }
 }
