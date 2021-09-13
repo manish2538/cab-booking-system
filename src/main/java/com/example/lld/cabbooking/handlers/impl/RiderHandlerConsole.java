@@ -3,6 +3,8 @@ package com.example.lld.cabbooking.handlers.impl;
 import com.example.lld.cabbooking.exceptions.InvalidDetailsException;
 import com.example.lld.cabbooking.exceptions.RiderFunctionalityNotFound;
 import com.example.lld.cabbooking.handlers.RiderHandler;
+import com.example.lld.cabbooking.manager.RideManager;
+import com.example.lld.cabbooking.manager.RiderManager;
 import com.example.lld.cabbooking.modal.Ride;
 import lombok.NonNull;
 
